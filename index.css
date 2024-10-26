@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "UD Digi Kyokasho N-B";
+}
+
+@keyframes MioneTitleShiny {
+    0%{
+        color: #fb9fbc;
+
+    }
+    50%{
+        color: #ffcbe2;
+
+    }
+    100%{
+        color: #fb9fbc;
+    }
+}
+
+
+@keyframes MionePissShiny {
+    0%{
+        color: #ffbcd6;
+
+    }
+    50%{
+        color: #fb9fbc;
+
+    }
+    100%{
+        color: #ffbcd6;
+    }
+}
+
+@keyframes Shake {
+    0%{
+        rotate: .6deg;
+    }
+    12%{
+        rotate: .2deg;
+    }
+    25%{
+        rotate: 0deg;
+
+    }
+    37%{
+        rotate: -.2deg;
+    }
+    50%{
+        rotate: -.6deg;
+    }
+    62%{
+        rotate: -.2deg;
+    }
+    74%{
+        rotate: 0deg;
+
+    }
+    86%{
+        rotate: .2deg;
+    }
+    100%{
+        rotate: .6deg;
+    }
+}
+
+
+*::selection{
+    background: #e794b0;
+    color: #fff;
+}
+
+body{
+    background-color: #251522;
+}
+
+#main{
+    background: linear-gradient(180deg, #ba3a67, #251522);
+
+}
+
+#page1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    width: 100%;
+    height: auto;
+
+
+}
+
+#MioneTitle{
+    font-size: 350px;
+    font-weight: lighter;
+    text-shadow: #ffbcd6 1px 0 20px;
+
+    animation: MioneTitleShiny 5s infinite ease-in-out;
+
+    color: #ffcbe2;
+}
+
+#MionePiss{
+    font-size: 35px;
+    font-weight: lighter;
+    text-shadow: #ffbcd6 1px 0 20px;
+
+    animation: MionePissShiny 1s infinite ease-in-out;
+
+    color: #bb819e;
+}
+.MioneCase{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+#page2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#CodeLand{
+    width: 600px;
+    height: auto;
+    background: linear-gradient(180deg, #251522, #231525);
+    border-radius: 23px;
+
+    padding: 20px;
+
+    box-shadow: 0 0 10px #251522;
+
+    animation: Shake 10s infinite ease-in-out;
+}
+
+.title{
+    font-size : 50px;
+    font-weight: lighter;
+    text-shadow: #ffbcd6 1px 0 20px;
+
+    color: #f8a8ca;
+}
+
+.piss{
+    font-size : 20px;
+    font-weight: lighter;
+    text-shadow: #d7789b 1px 0 20px;
+
+    color: #d7789b;
+}
+
+#CodeTitleCase{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding-top: 12px;
+}
+#CodePissCase{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding-bottom: 32px;
+}
+
+.CodeCase{
+    width: auto;
+    padding-left: 10px;
+}
+
+.CodeExample{
+    border-radius: 23px;
+    background: linear-gradient(180deg, #10090f, #000000);
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+
+
+}
+
+.CodeLine{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
