@@ -1,0 +1,128 @@
+[
+  {
+    "Id": "Mione_Introduction",
+    "Title": "Mione 🪶",
+    "Detailed": "Mione programming language\n\nMione is a lightweight, simple, and natural language-oriented programming language that is easy to learn for people of all ages and backgrounds. Mione is inspired by the phrase 'My own', which means 'what I own', giving users a sense of accomplishment when they write their programs, 'my own program'.",
+    "Img": "",
+    "Table": ""
+  },
+  {
+    "Id": "Mione_Categories",
+    "Title": "Mione 五大類別",
+    "Detailed": "The five major categories form the fundamental word units of Mione.\n\nExample of a sentence in Mione:\n\nset x = 1+2\n\nThis sentence can be broken down into the following categories:\n\n",
+    "Img": "",
+    "Table": {
+      "T": ["Head", "說明"],
+      "C": [
+        ["set", "標頭"],
+        ["x", "變數"],
+        ["=", "說明"],
+        ["1", "立即值"],
+        ["+", "符號"],
+        ["2", "立即值"]
+      ]
+    }
+  },
+  {
+    "Id": "Mione_Head",
+    "Title": "1 . HEAD，標頭",
+    "Detailed": "HEAD is the starting part of most program statements, used to inform the interpreter about the specific purpose of the statement.\n\nCommon HEAD values include:\n\n",
+    "Img": "",
+    "Table": {
+      "T": ["HEAD"],
+      "C": [
+        ["set"],
+        ["input"],
+        ["for"],
+        ["if"],
+        ["while"],
+        ["return"]
+      ]
+    }
+  },
+  {
+    "Id": "Mione_Prompt",
+    "Title": "2 . PROMPT，說明",
+    "Detailed": "PROMPT must always be followed by a resource. It provides supplementary explanations for most statements.\nFor example, 'set x' can be further specified as 'set x = 1'.\n\nCommon PROMPT values include:\n\n",
+    "Img": "",
+    "Table": {
+      "T": ["PROMPT"],
+      "C": [
+        ["do"],
+        ["then"],
+        ["="],
+        ["as"],
+        ["else"]
+      ]
+    }
+  },
+  {
+    "Id": "Mione_Symbol",
+    "Title": "3 . SYMBOL，符號",
+    "Detailed": "SYMBOL includes any algorithmic symbols, though not all of them function in computations. For example, print() and parentheses () do not perform calculations but are used for function calls in Mione.\n\nCommon SYMBOL values include:\n\n",
+    "Img": "",
+    "Table": {
+      "T": ["SYMBOL"],
+      "C": [
+        ["+"],
+        ["-"],
+        ["*"],
+        ["/"],
+        ["("],
+        [")"]
+      ]
+    }
+  },
+  {
+    "Id": "Mione_Variable",
+    "Title": "4 . Variable，變數",
+    "Detailed": "A variable holds a value, and if not explicitly initialized, it will not contain any value. A variable may accept a PROMPT to modify its value.\nFor example:\n\nset x = 11\n\nAlternatively, you can use commands like 'y into table', which adds the value of 'y' to the 'table'.",
+    "Img": "",
+    "Table": ""
+  },
+  {
+    "Id": "Mione_Value",
+    "Title": "5 . Value，立即值",
+    "Detailed": "A Value only disappears from memory at the end of the program.\n\nEach Value creates a unique object and does not reuse memory locations, even if the values are the same.\n\nCommon Value types include:\n\n",
+    "Img": "",
+    "Table": {
+      "T": ["類型", "意思"],
+      "C": [
+        ["String", "字串"],
+        ["NPNumber", "整數"],
+        ["PNumber", "浮點數"],
+        ["Function", "函數"],
+        ["Range", "執行式"],
+        ["Table", "表單"]
+      ]
+    }
+  },
+  {
+    "Id": "Mione_Architecture",
+    "Title": "Mione架構",
+    "Detailed": "This chapter will explain Mione's architecture using the official Mione interpreter.\n\nTypes of values include ValueObj, MioneObj, CaseObj, and others that represent various objects or components used in the Mione system.\n\nEach object type has its own unique properties and structures, as outlined below.",
+    "Img": "",
+    "Table": ""
+  },
+  {
+    "Id": "Mione_Objects",
+    "Title": "Mione Object Types",
+    "Detailed": "There are several object types in Mione:\n\n1. ValueObj: Represents the immediate value.\n2. MioneObj: Contains all five major categories.\n3. CaseObj: Represents the result from FILE_TO_CASE.\n4. VariableObj: Represents a variable and its value.\n5. AreaObj: Contains functions or execution blocks.\n6. TableObj: Represents table values.\n7. CountObj: Contains counted values.",
+    "Img": "",
+    "Table": ""
+  },
+  {
+    "Id": "Mione_Run",
+    "Title": "運行",
+    "Detailed": "The interpreter follows three steps to execute Mione code:\n\n1. File to Case (FTC): Converts file input to CaseObj.\n2. Case to Mione (CASE_TO_MIONE): Converts CaseObj into MioneObj.\n3. Run (RUN_WITH_MIONE): Executes the code by reading the MioneObj and carrying out the appropriate actions.",
+    "Img": "",
+    "Table": ""
+  },
+  {
+    "Id": "Mione_Special_Terms",
+    "Title": "特殊用詞",
+    "Detailed": "In Mione, special terms like '#Case', '#SuperChar', and '#資源' are used for various operations. For example:\n\n- #Case refers to the collection of similar CharTypes.\n- #SuperChar refers to special characters used within strings, like '\\n' for newline and '\\u()' for custom characters.",
+    "Img": "",
+    "Table": ""
+  }
+]
