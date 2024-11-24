@@ -12,7 +12,7 @@
     "Title": "Mione 五大類別",
     "Detailed": "The five major categories form the fundamental word units of Mione.\n\nExample of a sentence in Mione:\n\nset x = 1+2\n\nThis sentence can be broken down into the following categories:\n\n",
     "Img": "",
-    "CodeBase": "",,
+    "CodeBase": "",
     "Table": {
       "T": ["Head", "說明"],
       "C": [
