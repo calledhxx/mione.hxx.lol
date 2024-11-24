@@ -226,8 +226,13 @@ table{
 }
 
 .lineOdd{
-    background-color: rgba(255, 149, 211, 0.46);
+    background-color: rgba(255, 102, 192, 0.33);
 }
 .lineEven{
-    background-color: rgba(162, 51, 100, 0.29);
+    background-color: rgba(162, 51, 100, 0.21);
 }
+
+thead{
+    background-color: #301224;
+}
+
