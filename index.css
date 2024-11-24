@@ -66,6 +66,26 @@
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(166, 166, 166, 0.52);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(170, 170, 170, 0.72);
+}
 
 *::selection{
     background: #e794b0;
@@ -77,8 +97,8 @@ body{
 }
 
 #topBar{
-    position: sticky;
-    background-color: rgba(21, 21, 21, 0.25);
+    position: fixed;
+    background-color: rgba(21, 21, 21, 0.65);
     top: 0;
     width: 100%;
     height: 50px;
