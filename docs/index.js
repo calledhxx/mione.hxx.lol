@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
             name: "mione",
             link: "https://" + window.location.hostname + ""
         },
+        {
+            name: "mione",
+            link: "https://" + window.location.hostname + "/when"
+        },
 
     ]
 
