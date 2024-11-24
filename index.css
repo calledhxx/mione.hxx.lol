@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 
-    font-family: "UD Digi Kyokasho N-B";
+    font-family: "UD Digi Kyokasho N-B", sans-serif  ;
+
 }
 
 @keyframes MioneTitleShiny {
