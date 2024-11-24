@@ -97,6 +97,8 @@ body{
 }
 
 #topBar{
+    box-shadow: rgba(255, 67, 115, 0.21) 1px 0 20px;
+
     position: fixed;
     background-color: rgba(21, 21, 21, 0.65);
     top: 0;
