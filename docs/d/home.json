@@ -6,7 +6,12 @@
     "Img": "d/img/mione.svg",
     "Table": "",
     "CodeBase": [
-      "set x = \"x\""
+      "input \"io\" as io",
+      "set x = \"x\"",
+      "",
+      "if x == \"x\" then range()",
+      "   io.print(\"x is x\")",
+      "end"
     ]
   },
   {
