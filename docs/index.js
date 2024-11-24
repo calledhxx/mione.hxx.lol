@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     [(t[i]).Detailed, ("h2"), "docs-B", "textContent"],
                     [(t[i]).Img, ("img"), "docs-C", "src"],
                     [(t[i]).Table, ("table"), "docs-D", false],
+                    [(t[i]).CodeBase, ("div"), "docs-E", false],
                 ]
 
                 for (let ii = 0; ii < oD.length; ii++) {
@@ -114,6 +115,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
                                 a.appendChild(T);
+                            }
+
+                            if (oD[ii][1] === "div"){
+                                let Top = document.createElement("div");
+                                let Content = document.createElement("div");
+                                let Bottom = document.createElement("div");
+
+                                Top.classList.add("docs-CodeTop");
+                                Content.classList.add("docs-CodeContent");
+                                Bottom.classList.add("docs-CodeBottom");
+
+
+                                for (let Line = 0;Line < oD[ii][0].length;Line++) {
+                                    let CASE = document.createElement("div");
+
+                                    let C = document.createElement("p");
+                                    let L = document.createElement("p");
+                                    C.textContent = oD[ii][0][Line];
+                                    L.textContent = Line+1;
+
+                                    C.classList.add("docs-CodeLineC");
+                                    L.classList.add("docs-CodeLineL");
+                                    CASE.classList.add("docs-CodeLine");
+
+                                    /*
+                                    for (let Char = 0;Char < oD[ii][0][Line].length;Char++) {
+                                        let c = oD[ii][0][Line][Char];
+                                    }
+
+                                     */
+
+                                    CASE.appendChild(L);
+                                    CASE.appendChild(C);
+                                    Content.appendChild(CASE);
+                                }
+
+                                a.appendChild(Top);
+                                a.appendChild(Content);
+                                a.appendChild(Bottom);
+
+
                             }
                         }
 

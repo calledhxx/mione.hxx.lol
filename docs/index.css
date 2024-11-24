@@ -15,6 +15,9 @@ body{
 }
 
 #topBar{
+    box-shadow: rgba(255, 67, 115, 0.21) 1px 0 20px;
+
+
     position: fixed;
     background-color: rgba(21, 21, 21, 0.65);
     top: 0;
@@ -104,6 +107,9 @@ body{
 }
 
 #L{
+    box-shadow: rgba(255, 255, 255, 0.36) 1px 0 20px;
+
+
     overflow-y : auto;
     height: 100%;
     width: 20%;
@@ -143,6 +149,8 @@ body{
 }
 
 #R{
+    box-shadow: rgba(255, 255, 255, 0.36) 1px 0 20px;
+
     height: 100%;
     width: 70%;
 
@@ -167,12 +175,16 @@ body{
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+
+
 }
 .docLink{
     color: rgba(230, 230, 230, 0.64);
     text-align: center;
 
     font-size: 20px;
+
+    text-shadow: #ffffff 1px 0 20px;
 }
 
 .docLink:hover{
@@ -185,18 +197,22 @@ body{
 }
 
 .docs-A{
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(255, 255, 255, 0.86);
     margin: 25px 25px 25px 30px;
 
 
     font-size: 45px;
+
+    text-shadow: rgba(255, 255, 255, 0.42) 1px 0 20px;
 }
 
 .docs-B{
-    color: rgba(255, 255, 255, 0.48);
+    color: rgba(255, 255, 255, 0.73);
     font-size: 25px;
 
     margin: 25px 25px 25px 30px;
+
+    text-shadow: rgba(255, 255, 255, 0.36) 1px 0 20px;
 
 }
 
@@ -207,6 +223,8 @@ body{
 .docs-D{
     margin: 25px 25px 25px 30px;
 }
+
+
 
 th{
     padding: 5px 10px;
@@ -227,12 +245,101 @@ table{
 
 .lineOdd{
     background-color: rgba(255, 102, 192, 0.33);
+
+    text-shadow: rgb(255, 255, 255) 1px 0 20px;
+
+    border : rgba(255, 255, 255, 0.33) 2px solid;
 }
 .lineEven{
     background-color: rgba(162, 51, 100, 0.21);
+
+    text-shadow: rgb(255, 255, 255) 1px 0 20px;
+
+    border : rgba(255, 176, 209, 0.33) 2px solid;
+
 }
 
 thead{
     background-color: #301224;
+}
+
+.docs-E{
+    margin: 25px 25px 25px 30px;
+    width: 500px;
+
+}
+
+.docs-CodeLine{
+    display: flex;
+}
+.docs-CodeLineL{
+    text-shadow: rgb(255, 140, 182) 1px 0 20px;
+
+
+    width: auto;
+
+    margin-left: 20px;
+
+    font-size: 18px;
+
+    color: rgba(255, 196, 218, 0.56);
+
+    /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.docs-CodeLineC{
+    width: auto;
+
+    margin-left: 20px;
+
+    font-size: 18px;
+
+    text-shadow: rgba(255, 255, 255, 0.88) 1px 0 20px;
+
+
+}
+
+
+.docs-CodeTop{
+    background-color: rgba(64, 3, 34, 0.32);
+    width: 100%;
+    height: 20px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    box-shadow: rgba(255, 67, 115, 0.21) 1px 0 20px;
+
+
+}
+.docs-CodeContent{
+    background-color: #250e1c;
+    width: 100%;
+    height: auto;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 3;
+
+    box-shadow: rgba(255, 67, 115, 0.21) 0 0 20px
+
+}
+.docs-CodeBottom{
+    background-color: rgba(109, 24, 65, 0.22);
+    width: 100%;
+    height: 20px;
+
+    box-shadow: rgba(255, 67, 115, 0.21) 1px 0 20px;
+
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
