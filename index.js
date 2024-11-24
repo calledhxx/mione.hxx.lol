@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
             name : "mione",
             link : "https://"+window.location.hostname+""
         },
+        {
+            name : "when",
+            link : "https://"+window.location.hostname+""
+        },
 
     ]
 
@@ -29,5 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
         linkLink.addEventListener("click", function() {
             window.location.href = (link.link);
         })
+
     }
 })

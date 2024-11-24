@@ -6,6 +6,39 @@
 
 }
 
+
+@keyframes limitedWHEN {
+    0% {
+        color: rgba(255, 0, 0, 0.51);
+        text-shadow:  rgba(255, 0, 0, 0.51) 1px 0 20px;
+
+    }
+    25% {
+        color: rgb(0, 255, 0,.8);
+        text-shadow:  rgb(0, 255, 0,.8) 1px 0 20px;
+
+    }
+    50% {
+        color: rgb(0, 0, 255,.8);
+        text-shadow:   rgb(0, 0, 255,.8) 1px 0 20px;
+
+    }
+    75% {
+        color: rgb(255, 255, 0,.8);
+        text-shadow:  rgb(255, 255, 0,.8) 1px 0 20px;
+
+    }
+    100% {
+        color: rgb(255, 0, 255,.8);
+        text-shadow:  rgb(255, 0, 255,.8) 1px 0 20px;
+
+    }
+}
+
+#b-when{
+    animation: limitedWHEN 5s infinite ease-in-out;
+}
+
 @keyframes MioneTitleShiny {
     0%{
         color: #fb9fbc;
