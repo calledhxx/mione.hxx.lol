@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <link href="index.css" rel="stylesheet" type="text/css" />
+<script src="index.js"></script>
 
 <link rel="icon" href="mione.svg" type="image/x-icon" />
-<script src="header.js"></script>
 
 <html lang="en">
 <head>
@@ -18,7 +18,28 @@
     </title>
 </head>
 <body id = "body">
+
+<div id = "topBar">
+    <button class="topButton" id = "b-mione">
+        <img style ="width: auto;height: 31px;" src="mione.svg" alt="mione">
+        
+    </button>
+    <button class="topButton" id = "b-about">
+        ABOUT
+    </button>
+    <button class="topButton" id = "b-docs">
+        DOCS
+    </button>
+    <button class="topButton" id = "b-founders">
+        FOUNDERS
+    </button>
+    <button class="topButton" id = "b-thanks">
+        THANKS
+    </button>
+</div>
+
 <div id = "main">
+
     <div id = "page1">
 
         <div class="MioneCase">
@@ -40,12 +61,12 @@
     </div>
 
     <div id = "page2">
-        <div id = "CodeLand">
-            <div id = "CodeTitleCase">
-                <div class = "title">Mione語法展示</div>
+        <div class = "CodeLand">
+            <div class = "CodeTitleCase">
+                <div class = "title">Mione Example 1</div>
             </div>
-            <div id = "CodePissCase">
-                <div class = "piss">使用 "io" 庫執行變數判斷。</div>
+            <div class = "CodePissCase">
+                <div class = "piss">Using "io" library.</div>
             </div>
 
             <div class="CodeExample" >
@@ -114,7 +135,9 @@
                 </div>
             </div>
         </div>
+
     </div>
+
 </div>
 </body>
 </html>
