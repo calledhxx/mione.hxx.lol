@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             link: "https://" + window.location.hostname + ""
         },
         {
-            name: "mione",
+            name: "when",
             link: "https://" + window.location.hostname + "/when"
         },
 
