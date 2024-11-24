@@ -4,13 +4,15 @@
     "Title": "Mione 🪶",
     "Detailed": "Mione programming language\n\nMione is a lightweight, simple, and natural language-oriented programming language that is easy to learn for people of all ages and backgrounds. Mione is inspired by the phrase 'My own', which means 'what I own', giving users a sense of accomplishment when they write their programs, 'my own program'.",
     "Img": "",
-    "Table": ""
+    "Table": "",
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Categories",
     "Title": "Mione 五大類別",
     "Detailed": "The five major categories form the fundamental word units of Mione.\n\nExample of a sentence in Mione:\n\nset x = 1+2\n\nThis sentence can be broken down into the following categories:\n\n",
     "Img": "",
+    "CodeBase": "",,
     "Table": {
       "T": ["Head", "說明"],
       "C": [
@@ -38,7 +40,8 @@
         ["while"],
         ["return"]
       ]
-    }
+    },
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Prompt",
@@ -54,7 +57,8 @@
         ["as"],
         ["else"]
       ]
-    }
+    },
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Symbol",
@@ -71,7 +75,8 @@
         ["("],
         [")"]
       ]
-    }
+    },
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Variable",
@@ -95,34 +100,39 @@
         ["Range", "執行式"],
         ["Table", "表單"]
       ]
-    }
+    },
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Architecture",
     "Title": "Mione架構",
     "Detailed": "This chapter will explain Mione's architecture using the official Mione interpreter.\n\nTypes of values include ValueObj, MioneObj, CaseObj, and others that represent various objects or components used in the Mione system.\n\nEach object type has its own unique properties and structures, as outlined below.",
     "Img": "",
-    "Table": ""
+    "Table": "",
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Objects",
     "Title": "Mione Object Types",
     "Detailed": "There are several object types in Mione:\n\n1. ValueObj: Represents the immediate value.\n2. MioneObj: Contains all five major categories.\n3. CaseObj: Represents the result from FILE_TO_CASE.\n4. VariableObj: Represents a variable and its value.\n5. AreaObj: Contains functions or execution blocks.\n6. TableObj: Represents table values.\n7. CountObj: Contains counted values.",
     "Img": "",
-    "Table": ""
+    "Table": "",
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Run",
     "Title": "運行",
     "Detailed": "The interpreter follows three steps to execute Mione code:\n\n1. File to Case (FTC): Converts file input to CaseObj.\n2. Case to Mione (CASE_TO_MIONE): Converts CaseObj into MioneObj.\n3. Run (RUN_WITH_MIONE): Executes the code by reading the MioneObj and carrying out the appropriate actions.",
     "Img": "",
-    "Table": ""
+    "Table": "",
+    "CodeBase": ""
   },
   {
     "Id": "Mione_Special_Terms",
     "Title": "特殊用詞",
     "Detailed": "In Mione, special terms like '#Case', '#SuperChar', and '#資源' are used for various operations. For example:\n\n- #Case refers to the collection of similar CharTypes.\n- #SuperChar refers to special characters used within strings, like '\\n' for newline and '\\u()' for custom characters.",
     "Img": "",
-    "Table": ""
+    "Table": "",
+    "CodeBase": ""
   }
 ]

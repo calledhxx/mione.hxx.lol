@@ -4,13 +4,17 @@
     "Title":"Mione Docs Home Page",
     "Detailed": "Welcome to Mione Docs!",
     "Img": "d/img/mione.svg",
-    "Table": ""
+    "Table": "",
+    "CodeBase": [
+      "set x = \"x\""
+    ]
   },
   {
     "Id":"wsm",
     "Title":"What`s Mione?",
     "Detailed": "Mione is a programming language.",
     "Img": "",
-    "Table": ""
+    "Table": "",
+    "CodeBase": ""
     }
 ]
