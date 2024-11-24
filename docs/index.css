@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: "UD Digi Kyokasho N-B";
+    font-family: "UD Digi Kyokasho N-B", sans-serif  ;
 }
 
 *::selection{
@@ -106,6 +106,18 @@ body{
     height: 83%;
 }
 
+@keyframes toBeShineBackground {
+    from{
+        box-shadow: rgba(255, 255, 255, 0.36) 1px 0 20px;
+
+
+    }
+    to{
+        box-shadow: rgb(255, 255, 255) 1px 0 20px;
+
+    }
+}
+
 #L{
     box-shadow: rgba(255, 255, 255, 0.36) 1px 0 20px;
 
@@ -126,6 +138,11 @@ body{
     border: rgba(255, 71, 129, 0.28) 2px solid;
 
 
+}
+
+#L:hover{
+    box-shadow: rgb(255, 255, 255) 1px 0 20px;
+    animation: toBeShineBackground .3s;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -166,6 +183,11 @@ body{
     border: rgba(255, 71, 129, 0.28) 2px solid;
 
     overflow: auto;
+}
+
+#R:hover{
+    box-shadow: rgb(255, 255, 255) 1px 0 20px;
+    animation: toBeShineBackground .3s;
 }
 .docLinkCase{
     display: flex;
@@ -222,8 +244,35 @@ body{
 
 .docs-D{
     margin: 25px 25px 25px 30px;
+
+    border-radius: 10px;
+    letter-spacing: 1px;
+
+    padding: 10px;
+
+    background-color: rgba(255, 67, 115, 0.21);
+    box-shadow: rgba(255, 67, 115, 0.21) 1px 0 20px;
+
+    border-collapse: separate;
+    border-spacing: 7px
 }
 
+@keyframes toBeShineB{
+    from{
+        box-shadow: rgba(255, 67, 115, 0.21) 1px 0 20px;
+
+    }
+    to{
+        box-shadow: rgba(255, 255, 255, 0.55) 1px 0 20px;
+
+    }
+}
+
+.docs-D:hover{
+    box-shadow: rgba(255, 255, 255, 0.55) 1px 0 20px;
+
+    animation: toBeShineB .3s;
+}
 
 
 th{
@@ -232,15 +281,29 @@ th{
 
     font-size: 20px;
     border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 1px 0 20px;
 
 }
 
-table{
-    border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.13);
-    letter-spacing: 1px;
+@keyframes toBeShineTableC {
+    from{
+        color: rgba(255, 255, 255, 0.64);
+        box-shadow: rgba(255, 255, 255, 0.1) 1px 0 20px;
 
-    padding: 10px;
+
+    }
+    to{
+        color: rgb(255, 255, 255);
+        box-shadow: rgba(255, 255, 255, 0.7) 1px 0 20px;
+
+    }
+}
+
+th:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(255, 255, 255, 0.7) 1px 0 20px;
+
+    animation: toBeShineTableC .3s;
 }
 
 .lineOdd{
@@ -248,14 +311,12 @@ table{
 
     text-shadow: rgb(255, 255, 255) 1px 0 20px;
 
-    border : rgba(255, 255, 255, 0.33) 2px solid;
 }
 .lineEven{
-    background-color: rgba(162, 51, 100, 0.21);
+    background-color: rgba(255, 80, 156, 0.21);
 
     text-shadow: rgb(255, 255, 255) 1px 0 20px;
 
-    border : rgba(255, 176, 209, 0.33) 2px solid;
 
 }
 
@@ -270,7 +331,10 @@ thead{
 }
 
 .docs-CodeLine{
+    white-space: pre;
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .docs-CodeLineL{
     text-shadow: rgb(255, 140, 182) 1px 0 20px;
@@ -319,6 +383,11 @@ thead{
 
 
 }
+
+.docs-CodeLineC:hover{
+    color: rgb(255, 255, 255);
+    animation: toBeShine .3s;
+}
 .docs-CodeContent{
     background-color: #250e1c;
     width: 100%;
@@ -331,6 +400,9 @@ thead{
     box-shadow: rgba(255, 67, 115, 0.21) 0 0 20px
 
 }
+
+
+
 .docs-CodeBottom{
     background-color: rgba(109, 24, 65, 0.22);
     width: 100%;
